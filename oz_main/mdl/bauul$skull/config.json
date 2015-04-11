@@ -1,0 +1,8 @@
+{
+  "scale":              0.039,
+  "translate":          [ 0, -0.20, -0.18 ],
+  "jumpTranslate":      [ 0, 0, -0.60 ],
+
+  "weaponRotate":       [ -30, 180, 35 ],
+  "weaponTranslate":    [ 0.8, -0.45, -0.1 ]
+}

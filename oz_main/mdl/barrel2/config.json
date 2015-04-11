@@ -1,0 +1,6 @@
+{
+  "forceStatic":        true,
+
+  "scale":              0.025,
+  "translate":          [ 0, 0, -0.52 ]
+}

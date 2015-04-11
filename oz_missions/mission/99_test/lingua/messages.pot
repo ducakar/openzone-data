@@ -1,0 +1,7 @@
+#: data/oz_missions/mission/99_test/description.json
+msgid "Test"
+msgstr ""
+
+#: data/oz_missions/mission/99_test/description.json
+msgid "Test of various engine capabilities."
+msgstr ""

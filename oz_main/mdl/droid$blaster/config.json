@@ -1,0 +1,7 @@
+{
+  "translate":          [ 0, -0.10, -0.15 ],
+  "jumpTranslate":      [ 0, 0, -0.15 ],
+
+  "weaponRotate":       [ 0, 90, 0 ],
+  "weaponTranslate":    [ -0.28, -0.32, 0.23 ]
+}

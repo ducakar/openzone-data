@@ -1,0 +1,283 @@
+#: data/oz_main/class/mechWarrior.json
+msgid "mech warrior"
+msgstr ""
+
+#: data/oz_main/baseq3/maps/forum.json
+msgid "forum"
+msgstr ""
+
+#: data/oz_main/class/hoverTank.json
+msgid "gatling gun"
+msgstr ""
+
+#: data/oz_main/baseq3/maps/tutorial_movement.json
+msgid "tutorial - movement"
+msgstr ""
+
+#: data/oz_main/class/bigExplosion.json
+msgid "explosion"
+msgstr ""
+
+#: data/oz_main/class/hoverTank.json
+msgid "hover tank"
+msgstr ""
+
+#: data/oz_main/class/droid$blaster.json
+msgid "blaster"
+msgstr ""
+
+#: data/oz_main/baseq3/maps/atlantis.json
+msgid "atlantis"
+msgstr ""
+
+#: data/oz_main/baseq3/maps/bunker.json
+msgid "bunker"
+msgstr ""
+
+#: data/oz_main/class/tree.json
+msgid "tree"
+msgstr ""
+
+#: data/oz_main/class/bomb.json
+msgid "bomb"
+msgstr ""
+
+#: data/oz_main/baseq3/maps/testCastle.json
+msgid "manual door"
+msgstr ""
+
+#: data/oz_main/baseq3/maps/tutorial_carrying.json
+msgid "tutorial - carying"
+msgstr ""
+
+#: data/oz_main/class/droid$grenadeLauncher.json
+msgid "grenade launcher"
+msgstr ""
+
+#: data/oz_main/class/key.json
+msgid "key"
+msgstr ""
+
+#: data/oz_main/class/firstAid.json
+msgid "first aid"
+msgstr ""
+
+#: data/oz_main/class/cyborg$chaingun.json
+msgid "chaingun"
+msgstr ""
+
+#: data/oz_main/class/binoculars.json
+msgid "binoculars"
+msgstr ""
+
+#: data/oz_main/class/hoverTank.json
+msgid "heavy blaster"
+msgstr ""
+
+#: data/oz_main/class/galileo.json
+msgid "Galileo SatNav"
+msgstr ""
+
+#: data/oz_main/baseq3/maps/beastBunker.json
+msgid "beast bunker"
+msgstr ""
+
+#: data/oz_main/class/goblin.json
+msgid "goblin"
+msgstr ""
+
+#: data/oz_main/baseq3/maps/testCastle.json
+msgid "crusher"
+msgstr ""
+
+#: data/oz_main/class/nvGoggles.json
+msgid "night vision goggles"
+msgstr ""
+
+#: data/oz_main/class/console.json
+msgid "console"
+msgstr ""
+
+#: data/oz_main/class/zombie.json
+msgid "zombie"
+msgstr ""
+
+#: data/oz_main/class/pine.json
+msgid "pine"
+msgstr ""
+
+#: data/oz_main/class/shell.json
+msgid "shell"
+msgstr ""
+
+#: data/oz_main/baseq3/maps/testCastle.json
+msgid "ignorant"
+msgstr ""
+
+#: data/oz_main/class/cyborg.json
+msgid "cyborg"
+msgstr ""
+
+#: data/oz_main/credits/oz_main.txt
+msgid ""
+"> textures <\n"
+"\n"
+"Egyptian & Tech1 texture packs\n"
+"Sock\n"
+"\n"
+"> sounds <\n"
+"\n"
+"AwesundFX1\n"
+"Awesund\n"
+"\n"
+"droid-sounds\n"
+"Kevin Good\n"
+"\n"
+"> BSP structures <\n"
+"Davorin Učakar\n"
+"\n"
+"> models <\n"
+"\n"
+"barrel, cbbox, tree2, tree3\n"
+"Dietmar Pier\n"
+"\n"
+"barrel2, crate4\n"
+"Psionic\n"
+"\n"
+"bauul, ratamahatta\n"
+"Brian \"EvilBastard\" Collins\n"
+"\n"
+"debris01, debris02, debris03, debris03\n"
+"Markus \"makkE\" Bekel\n"
+"\n"
+"droid\n"
+"III_Demon\n"
+"\n"
+"goblin\n"
+"Conrad, Rodrigo\n"
+"\n"
+"hobgoblin\n"
+"Hunter, Burnt Kona, Fafner, Deranged\n"
+"\n"
+"pknight\n"
+"James Green, Ryan \"MrRogers\" Butts, NPherno\n"
+"\n"
+"> scripts <\n"
+"Davorin Učakar\n"
+msgstr ""
+
+#: data/oz_main/class/bauul$skull.json
+msgid "skull"
+msgstr ""
+
+#: data/oz_main/class/raptor.json
+msgid "raptor"
+msgstr ""
+
+#: data/oz_main/class/metalBarrel.json
+msgid "barrel"
+msgstr ""
+
+#: data/oz_main/class/droid.json
+msgid "droid"
+msgstr ""
+
+#: data/oz_main/class/beast$plasmagun.json
+msgid "plasma gun"
+msgstr ""
+
+#: data/oz_main/baseq3/maps/testCastle.json
+msgid "test castle"
+msgstr ""
+
+#: data/oz_main/baseq3/maps/house.json
+msgid "house"
+msgstr ""
+
+#: data/oz_main/class/bigCrate.json
+msgid "crate"
+msgstr ""
+
+#: data/oz_main/class/hoverTank.json
+msgid "cannon"
+msgstr ""
+
+#: data/oz_main/class/bauul.json
+msgid "bauul"
+msgstr ""
+
+#: data/oz_main/class/droid$hyperblaster.json
+msgid "hyperblaster"
+msgstr ""
+
+#: data/oz_main/class/knight$mace.json
+msgid "mace"
+msgstr ""
+
+#: data/oz_main/class/palm.json
+msgid "palm"
+msgstr ""
+
+#: data/oz_main/class/serviceStation.json
+msgid "service station"
+msgstr ""
+
+#: data/oz_main/class/datacube.json
+msgid "data cube"
+msgstr ""
+
+#: data/oz_main/class/explosiveBarrel.json
+msgid "explosive barrel"
+msgstr ""
+
+#: data/oz_main/class/box.json
+msgid "box"
+msgstr ""
+
+#: data/oz_main/baseq3/maps/testCastle.json
+msgid "switch"
+msgstr ""
+
+#: data/oz_main/baseq3/maps/pool.json
+msgid "pool"
+msgstr ""
+
+#: data/oz_main/baseq3/maps/testCastle.json
+msgid "auto door"
+msgstr ""
+
+#: data/oz_main/class/beast.json
+msgid "beast"
+msgstr ""
+
+#: data/oz_main/class/droid.OOM-9.json
+msgid "droid OOM-9"
+msgstr ""
+
+#: data/oz_main/class/knight.json
+msgid "knight"
+msgstr ""
+
+#: data/oz_main/baseq3/maps/testCastle.json
+msgid "elevator"
+msgstr ""
+
+#: data/oz_main/class/goblin$axe.json
+msgid "axe"
+msgstr ""
+
+#: data/oz_main/class/grenade.json
+msgid "grenade"
+msgstr ""
+
+#: data/oz_main/baseq3/maps/tower.json
+msgid "tower"
+msgstr ""
+
+#: data/oz_main/class/musicPlayer.json
+msgid "music player"
+msgstr ""
+
+#: data/oz_main/class/cvicek.json
+msgid "cviček"
+msgstr ""

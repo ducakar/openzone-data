@@ -1,0 +1,5 @@
+{
+  "scale":              0.039,
+  "translate":          [ 0, -0.20, -0.18 ],
+  "jumpTranslate":      [ 0, 0, -0.60 ]
+}

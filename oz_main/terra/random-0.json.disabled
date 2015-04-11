@@ -1,0 +1,52 @@
+{
+  "detailTexture":      "openzone/detail",
+  "liquidTexture":      "openzone/water1",
+  "liquidFogColour":    [ 0.00, 0.05, 0.20, 1.00 ],
+  "liquid":             "WATER",
+
+  "plains":             {
+    "bottomHeight":     -70,
+    "topHeight":        105,
+    "seed":             42,
+    "octaveCount":      4,
+    "frequency":        2,
+    "persistence":      0.5
+  },
+  "mountains":          {
+    "bottomHeight":     -100,
+    "topHeight":        100,
+    "seed":             42,
+    "frequency":        8.0
+  },
+  "combiner":           {
+    "mountainsControl": "combiner",
+    "lowerBound":       -1.0,
+    "upperBound":       1.0,
+    "falloff":          1.0,
+    "seed":             45
+  },
+  "turbulence":         {
+    "seed":             42,
+    "roughness":        2,
+    "power":            0.003
+  },
+  "noise":              {
+    "bottomHeight":     -0.07,
+    "topHeight":        0.0,
+    "seed":             42,
+    "frequency":        64
+  },
+
+  "gradient":           [
+    [ 0.00, 0.00, 0.10, -50.0 ],
+    [ 0.00, 0.20, 0.40, -30.0 ],
+    [ 0.20, 0.60, 0.60, -20.0 ],
+    [ 0.80, 0.60, 0.20,   0.0 ],
+    [ 0.10, 0.30, 0.10,  20.0 ],
+    [ 0.05, 0.20, 0.05,  50.0 ],
+    [ 0.10, 0.30, 0.10,  60.0 ],
+    [ 0.40, 0.40, 0.40,  80.0 ],
+    [ 0.40, 0.40, 0.40,  90.0 ],
+    [ 0.90, 0.90, 0.90,  98.0 ]
+  ]
+}

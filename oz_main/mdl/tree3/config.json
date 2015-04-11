@@ -1,0 +1,6 @@
+{
+  "scale":              0.2,
+  "translate":          [ 0, 0, -8.0 ],
+
+  "shader":             "plant"
+}

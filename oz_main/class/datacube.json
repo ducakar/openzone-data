@@ -1,0 +1,16 @@
+{
+  "base":               "Object",
+
+  "title":              "data cube",
+
+  "flag.solid":         false,
+  "flag.cylinder":      false,
+
+  "dim":                [ 0.15, 0.15, 0.15 ],
+
+  "life":               1,
+  "resistance":         inf,
+
+  "imagoType":          "SMM",
+  "imagoModel":         "datacube"
+}

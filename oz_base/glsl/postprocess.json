@@ -1,0 +1,4 @@
+{
+  "vertex":             "plain",
+  "fragment":           "postprocess"
+}

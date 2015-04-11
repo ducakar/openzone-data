@@ -1,0 +1,5 @@
+Content of this directory is part of Openzone ozbase package.
+
+Copyright © 2012 Davorin Učakar
+Author:  Davorin Učakar
+Licence: CC BY-SA 3.0

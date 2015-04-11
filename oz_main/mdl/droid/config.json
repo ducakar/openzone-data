@@ -1,0 +1,5 @@
+{
+  "shininess":          30,
+  "translate":          [ 0, -0.10, -0.10 ],
+  "jumpTranslate":      [ 0, 0, -0.15 ]
+}

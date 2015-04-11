@@ -1,0 +1,7 @@
+{
+  "forceStatic":        true,
+
+  "shininess":          16,
+  "scale":              0.024,
+  "translate":          [ 0, 0, -0.5922 ]
+}

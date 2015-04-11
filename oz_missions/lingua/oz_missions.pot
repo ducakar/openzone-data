@@ -1,0 +1,5 @@
+#: data/oz_missions/credits/oz_missions.txt
+msgid ""
+"> missions <\n"
+"Davorin Učakar\n"
+msgstr ""

@@ -1,0 +1,7 @@
+{
+  "fragPool":           "ruins",
+  "nFrags":             40,
+
+  "demolishSound":      "free/explode",
+  "groundOffset":       3.5
+}

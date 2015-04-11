@@ -1,0 +1,7 @@
+DISABLED
+
+*.bak
+*.prt
+*.srf
+
+*.blend?

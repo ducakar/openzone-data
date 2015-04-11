@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.72.0 commit date:2014-10-03, commit time:13:58, hash:95182d1</authoring_tool>
+    </contributor>
+    <created>2014-11-11T00:51:04</created>
+    <modified>2014-11-11T00:51:04</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="grey_png" name="grey_png">
+      <init_from>grey.png</init_from>
+    </image>
+    <image id="glass_png" name="glass_png">
+      <init_from>glass.png</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="Hull-effect">
+      <profile_COMMON>
+        <newparam sid="grey_png-surface">
+          <surface type="2D">
+            <init_from>grey_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="grey_png-sampler">
+          <sampler2D>
+            <source>grey_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">1 1 1 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="grey_png-sampler" texcoord="UVTex"/>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Canopy-effect">
+      <profile_COMMON>
+        <newparam sid="glass_png-surface">
+          <surface type="2D">
+            <init_from>glass_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="glass_png-sampler">
+          <sampler2D>
+            <source>glass_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">1 1 1 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="glass_png-sampler" texcoord="UVTex"/>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">10</float>
+            </shininess>
+            <transparency>
+              <float sid="transparency">0.5</float>
+            </transparency>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Hull-material" name="Hull">
+      <instance_effect url="#Hull-effect"/>
+    </material>
+    <material id="Canopy-material" name="Canopy">
+      <instance_effect url="#Canopy-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Wing_R-mesh" name="Wing.R">
+      <mesh>
+        <source id="Wing_R-mesh-positions">
+          <float_array id="Wing_R-mesh-positions-array" count="24">0.2000495 0.8001977 0 0.2000495 -0.9002224 0 -1.000247 -1.000247 0 -1.000247 1.000247 0 0 0.6001483 0.5001236 0 -0.9002224 0.8001977 -1.200297 -1.000247 0.8001977 -1.200297 0.8001977 0.8001977</float_array>
+          <technique_common>
+            <accessor source="#Wing_R-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Wing_R-mesh-normals">
+          <float_array id="Wing_R-mesh-normals-array" count="36">0 0 -1 0.2425356 0 0.9701425 0.9690032 0.04845017 0.2422508 0.0830276 -0.9963311 0.0207569 -0.9701424 0 -0.2425357 0.1493369 0.8960216 0.4181433 0 0 -1 -0.01634079 0.1960899 0.9804497 0.9284767 0 0.3713908 0.0830276 -0.9963311 0.0207569 -0.9701425 0 -0.2425357 0.2272998 0.9298632 0.2892907</float_array>
+          <technique_common>
+            <accessor source="#Wing_R-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Wing_R-mesh-map-0">
+          <float_array id="Wing_R-mesh-map-0-array" count="72">0 0 1 0 1 1 0 0 1 0 1 1 1 0 1 1 0 1 1 0 1 1 0 1 0 0 1 0 1 1 0 0 1 0 1 1 0 1 0 0 1 1 0 1 0 0 1 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 1 0 1 0 0 1 1</float_array>
+          <technique_common>
+            <accessor source="#Wing_R-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Wing_R-mesh-vertices">
+          <input semantic="POSITION" source="#Wing_R-mesh-positions"/>
+        </vertices>
+        <polylist material="Hull-material" count="12">
+          <input semantic="VERTEX" source="#Wing_R-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Wing_R-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Wing_R-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 0 1 0 1 2 0 2 4 1 3 7 1 4 6 1 5 4 2 6 5 2 7 1 2 8 5 3 9 6 3 10 2 3 11 2 4 12 6 4 13 7 4 14 4 5 15 0 5 16 3 5 17 3 6 18 0 6 19 2 6 20 5 7 21 4 7 22 6 7 23 0 8 24 4 8 25 1 8 26 1 9 27 5 9 28 2 9 29 3 10 30 2 10 31 7 10 32 7 11 33 4 11 34 3 11 35</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Wing_L-mesh" name="Wing.L">
+      <mesh>
+        <source id="Wing_L-mesh-positions">
+          <float_array id="Wing_L-mesh-positions-array" count="24">-0.2002966 0.8001977 0 -0.2002966 -0.9002224 0 0.9999999 -1.000247 0 0.9999999 1.000247 0 -2.4724e-4 0.6001483 0.5001236 -2.4724e-4 -0.9002224 0.8001977 1.200049 -1.000247 0.8001977 1.200049 0.8001977 0.8001977</float_array>
+          <technique_common>
+            <accessor source="#Wing_L-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Wing_L-mesh-normals">
+          <float_array id="Wing_L-mesh-normals-array" count="36">0 0 -1 0.01634079 0.1960899 0.9804497 -0.9690032 0.04845011 0.2422508 -0.0830276 -0.9963311 0.0207569 0.9701425 0 -0.2425357 -0.2272998 0.9298632 0.2892907 0 0 -1 -0.2425356 0 0.9701425 -0.9284767 0 0.3713906 -0.0830276 -0.996331 0.0207569 0.9701424 0 -0.2425357 -0.1493369 0.8960216 0.4181433</float_array>
+          <technique_common>
+            <accessor source="#Wing_L-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Wing_L-mesh-map-0">
+          <float_array id="Wing_L-mesh-map-0-array" count="72">0 0 0 1 1 1 0 0 0 1 1 1 0 1 1 1 1 0 0 1 1 1 1 0 0 0 0 1 1 1 0 0 0 1 1 1 1 0 0 0 1 1 1 0 0 0 1 1 0 0 0 1 1 0 0 0 0 1 1 0 1 0 0 0 1 1 1 0 0 0 1 1</float_array>
+          <technique_common>
+            <accessor source="#Wing_L-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Wing_L-mesh-vertices">
+          <input semantic="POSITION" source="#Wing_L-mesh-positions"/>
+        </vertices>
+        <polylist material="Hull-material" count="12">
+          <input semantic="VERTEX" source="#Wing_L-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Wing_L-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Wing_L-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 0 3 0 1 2 0 2 4 1 3 5 1 4 6 1 5 1 2 6 5 2 7 4 2 8 2 3 9 6 3 10 5 3 11 2 4 12 3 4 13 7 4 14 4 5 15 7 5 16 3 5 17 1 6 18 0 6 19 2 6 20 7 7 21 4 7 22 6 7 23 0 8 24 1 8 25 4 8 26 1 9 27 2 9 28 5 9 29 6 10 30 2 10 31 7 10 32 0 11 33 4 11 34 3 11 35</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="TailWing_R-mesh" name="TailWing.R">
+      <mesh>
+        <source id="TailWing_R-mesh-positions">
+          <float_array id="TailWing_R-mesh-positions-array" count="24">0.8001977 -0.1000248 0.4000989 0.8001977 -0.5001236 0.4000989 -0.4000988 -0.5001236 0 -0.3000741 0.5001236 0 0.8001977 -0.1000248 0.5001236 0.8001977 -0.5001236 0.5001236 -0.4000988 -0.5001236 0.1000247 -0.4000988 0.5001236 0.1000247</float_array>
+          <technique_common>
+            <accessor source="#TailWing_R-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="TailWing_R-mesh-normals">
+          <float_array id="TailWing_R-mesh-normals-array" count="36">0.3162277 0 -0.9486833 -0.3162278 0 0.9486833 1 0 0 0 -1 0 -1 0 0 0.4788522 0.8778955 0 0.3258176 -0.03258174 -0.9448711 -0.3162277 0 0.9486833 1 0 0 0 -1 0 -0.7053458 0.07053452 -0.7053455 0.3312946 0.8834522 0.3312947</float_array>
+          <technique_common>
+            <accessor source="#TailWing_R-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="TailWing_R-mesh-map-0">
+          <float_array id="TailWing_R-mesh-map-0-array" count="72">0 0 1 0 1 1 0 0 1 0 1 1 0 0 1 0 1 1 0 0 1 0 1 1 0 0 1 0 1 1 0 0 1 0 1 1 0 1 0 0 1 1 0 1 0 0 1 1 0 1 0 0 1 1 0 1 0 0 1 1 0 1 0 0 1 1 0 1 0 0 1 1</float_array>
+          <technique_common>
+            <accessor source="#TailWing_R-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="TailWing_R-mesh-vertices">
+          <input semantic="POSITION" source="#TailWing_R-mesh-positions"/>
+        </vertices>
+        <polylist material="Hull-material" count="12">
+          <input semantic="VERTEX" source="#TailWing_R-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#TailWing_R-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#TailWing_R-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 0 1 0 1 2 0 2 4 1 3 7 1 4 6 1 5 0 2 6 4 2 7 5 2 8 1 3 9 5 3 10 6 3 11 2 4 12 6 4 13 7 4 14 4 5 15 0 5 16 3 5 17 3 6 18 0 6 19 2 6 20 5 7 21 4 7 22 6 7 23 1 8 24 0 8 25 5 8 26 2 9 27 1 9 28 6 9 29 3 10 30 2 10 31 7 10 32 7 11 33 4 11 34 3 11 35</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="TailWing_L-mesh" name="TailWing.L">
+      <mesh>
+        <source id="TailWing_L-mesh-positions">
+          <float_array id="TailWing_L-mesh-positions-array" count="24">-0.7750926 -0.1000248 0.4000989 -0.7750926 -0.5001236 0.4000989 0.4252039 -0.5001236 0 0.3251792 0.5001236 0 -0.7750926 -0.1000248 0.5001236 -0.7750926 -0.5001236 0.5001236 0.4252039 -0.5001236 0.1000247 0.4252039 0.5001236 0.1000247</float_array>
+          <technique_common>
+            <accessor source="#TailWing_L-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="TailWing_L-mesh-normals">
+          <float_array id="TailWing_L-mesh-normals-array" count="36">-0.3258177 -0.03258174 -0.944871 0.3162277 0 0.9486833 -1 0 0 0 -1 0 0.7053458 0.07053452 -0.7053455 -0.3312947 0.8834522 0.3312945 -0.3162277 0 -0.9486833 0.3162278 0 0.9486833 -1 0 0 0 -1 0 1 0 0 -0.4788522 0.8778955 0</float_array>
+          <technique_common>
+            <accessor source="#TailWing_L-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="TailWing_L-mesh-map-0">
+          <float_array id="TailWing_L-mesh-map-0-array" count="72">0 0 0 1 1 1 0 0 0 1 1 1 0 0 0 1 1 1 0 0 0 1 1 1 0 0 0 1 1 1 0 0 0 1 1 1 1 0 0 0 1 1 1 0 0 0 1 1 1 0 0 0 1 1 1 0 0 0 1 1 1 0 0 0 1 1 1 0 0 0 1 1</float_array>
+          <technique_common>
+            <accessor source="#TailWing_L-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="TailWing_L-mesh-vertices">
+          <input semantic="POSITION" source="#TailWing_L-mesh-positions"/>
+        </vertices>
+        <polylist material="Hull-material" count="12">
+          <input semantic="VERTEX" source="#TailWing_L-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#TailWing_L-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#TailWing_L-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 0 3 0 1 2 0 2 4 1 3 5 1 4 6 1 5 0 2 6 1 2 7 5 2 8 1 3 9 2 3 10 6 3 11 2 4 12 3 4 13 7 4 14 4 5 15 7 5 16 3 5 17 1 6 18 0 6 19 2 6 20 7 7 21 4 7 22 6 7 23 4 8 24 0 8 25 5 8 26 5 9 27 1 9 28 6 9 29 6 10 30 2 10 31 7 10 32 0 11 33 4 11 34 3 11 35</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cockpit-mesh" name="Cockpit">
+      <mesh>
+        <source id="Cockpit-mesh-positions">
+          <float_array id="Cockpit-mesh-positions-array" count="24">0.4000989 0.4501112 -0.4501112 0.5001236 -0.05001229 -0.2500618 -0.5001236 -0.05001229 -0.2500618 -0.4000989 0.4501112 -0.4501112 0.4000989 -0.05001229 0.3500865 0.6001483 -1.050259 0.7501854 -0.6001483 -1.050259 0.7501854 -0.4000989 -0.05001229 0.3500865</float_array>
+          <technique_common>
+            <accessor source="#Cockpit-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cockpit-mesh-normals">
+          <float_array id="Cockpit-mesh-normals-array" count="36">0 -0.3713907 -0.9284767 0 0.3713907 0.9284767 0.9539445 0.2543852 0.1589907 0 -0.7071068 -0.7071068 -0.9539445 0.2543852 0.1589907 0 0.8479983 0.5299989 0 -0.3713907 -0.9284767 0 0.3713907 0.9284768 0.9539445 0.2543852 0.1589907 0 -0.7071068 -0.7071068 -0.9539445 0.2543852 0.1589907 0 0.8479983 0.5299989</float_array>
+          <technique_common>
+            <accessor source="#Cockpit-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cockpit-mesh-map-0">
+          <float_array id="Cockpit-mesh-map-0-array" count="72">0 0 1 0 1 1 0 0 1 0 1 1 1 0 1 1 0 1 0 0 1 0 1 1 0 0 1 0 1 1 0 0 1 0 1 1 0 1 0 0 1 1 0 1 0 0 1 1 0 0 1 0 0 1 0 1 0 0 1 1 0 1 0 0 1 1 0 1 0 0 1 1</float_array>
+          <technique_common>
+            <accessor source="#Cockpit-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cockpit-mesh-vertices">
+          <input semantic="POSITION" source="#Cockpit-mesh-positions"/>
+        </vertices>
+        <polylist material="Canopy-material" count="12">
+          <input semantic="VERTEX" source="#Cockpit-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cockpit-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cockpit-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 0 1 0 1 2 0 2 4 1 3 7 1 4 6 1 5 4 2 6 5 2 7 1 2 8 1 3 9 5 3 10 6 3 11 2 4 12 6 4 13 7 4 14 4 5 15 0 5 16 3 5 17 3 6 18 0 6 19 2 6 20 5 7 21 4 7 22 6 7 23 0 8 24 4 8 25 1 8 26 2 9 27 1 9 28 6 9 29 3 10 30 2 10 31 7 10 32 7 11 33 4 11 34 3 11 35</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Body-mesh" name="Body">
+      <mesh>
+        <source id="Body-mesh-positions">
+          <float_array id="Body-mesh-positions-array" count="144">1.000247 1.000247 -0.6001483 1.000247 -1.000247 -0.6001483 -1.000247 -1.000247 -0.6001483 -1.000247 1.000247 -0.6001483 0.6001483 0.6001483 1.000247 0.6001483 -1.000247 1.000247 -0.6001483 -1.000247 1.000247 -0.6001483 0.6001483 1.000247 1.000247 1.000247 -0.6001483 -1.000247 1.000247 -0.6001483 0.6001483 0.6001483 1.000247 -0.6001483 0.6001483 1.000247 1.000247 1.000247 -0.6001483 -1.000247 1.000247 -0.6001483 0.6001483 0.6001483 1.000247 -0.6001483 0.6001483 1.000247 -0.5001236 1.600395 0 0.5001236 1.600395 0 -0.8001977 1.600395 -0.5001236 0.8001977 1.600395 -0.5001236 -0.5001236 1.600395 0 0.5001236 1.600395 0 -0.8001977 1.600395 -0.5001236 0.8001977 1.600395 -0.5001236 -0.5001236 1.600395 0 0.5001236 1.600395 0 -0.8001977 1.600395 -0.5001236 0.8001977 1.600395 -0.5001236 -0.3000742 -2.000494 1.000247 0.3000742 -2.000494 1.000247 -0.6001483 -2.000494 0.6001483 0.6001483 -2.000494 0.6001483 0.3000742 -3.000741 0.9002224 -0.3000742 -3.000741 0.9002224 0.3000742 -3.000741 1.000247 -0.3000742 -3.000741 1.000247 0.4000989 2.100519 -0.4000989 -0.4000989 2.100519 -0.4000989 0.4000989 2.100519 -0.2000494 -0.4000989 2.100519 -0.2000494 0.4000989 2.100519 -0.4000989 -0.4000989 2.100519 -0.4000989 0.4000989 2.100519 -0.2000494 -0.4000989 2.100519 -0.2000494 0.4000989 2.100519 -0.4000989 -0.4000989 2.100519 -0.4000989 0.4000989 2.100519 -0.2000494 -0.4000989 2.100519 -0.2000494</float_array>
+          <technique_common>
+            <accessor source="#Body-mesh-positions-array" count="48" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Body-mesh-normals">
+          <float_array id="Body-mesh-normals-array" count="228">0 1 0 0 0 0 0 0 0 0 0.196116 -0.9805806 0 0 0 0 0 0 -0.9805808 0.1961161 0 0.740761 0.5037176 0.4444566 0 0 0 0 0 0 0 0 0 0 0 0 0 0.164399 -0.986394 0 0.3713907 0.9284766 0 0 0 0 0 0 0 0 0 0 0 0 -0.8599555 0.4013125 0.315317 0.8408278 0.196193 0.5044967 0 0 -1 0 0 0 0 0 0 0 0.7071068 0.7071068 0 0 0 0 0 0 -0.9701425 0 0.2425356 0.9701425 0 0.2425356 0 0 1 0 -0.7682213 -0.6401844 -0.9656092 -0.09656089 0.2414022 0.7779098 -0.2333729 0.5834324 0 0 1 0 -0.2873478 -0.9578263 -0.7985638 -0.05989229 0.598923 1 0 0 0 0 1 0 -1 0 0 1 0 0 0 0 0 0 0 0 0.196116 -0.9805807 0 0 0 0 0 0 -0.740761 0.5037176 0.4444566 0.9805807 0.1961161 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.164399 -0.9863939 0 0.3713907 0.9284768 0 0 0 0 0 0 0 0 0 0 0 0 -0.8408278 0.196193 0.5044967 0.8599555 0.4013125 0.315317 0 0 -1 0 0 0 0 0 0 0 0.7071068 0.7071068 0 0 0 0 0 0 -0.9701425 0 0.2425355 0.9701426 0 0.2425356 0 0 1 0 -0.7682213 -0.6401844 -0.7779098 -0.2333729 0.5834324 0.9656092 -0.09656089 0.2414022 0 0 1 0 -0.2873477 -0.9578263 -1 0 0 0.7985638 -0.05989229 0.598923 0 0 1 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#Body-mesh-normals-array" count="76" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Body-mesh-map-0">
+          <float_array id="Body-mesh-map-0-array" count="456">0.8474372 0.7722492 0.8776735 0.7721564 0.8780445 0.8931015 0 0 0 0 0 0 0 0 0 0 0 0 0.7266671 0.3933777 0.9685572 0.3941199 0.9078519 0.4697937 0 0 0 0 0 0 0 0 0 0 0 0 0.1280467 0.08179003 0.1470569 0.002666711 0.1750115 0 0.3865069 0.08179003 0.299444 0.07983607 0.339542 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6967099 0.3023102 0.9990726 0.3032378 0.9685572 0.3941199 0.6820971 0.07851833 0.5309159 0.07805454 0.5462735 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2444005 0.1715074 4.37122e-4 0.2464659 0.1280467 0.08179003 0.2701531 0.1715074 0.299444 0.07983607 0.3865069 0.08179003 0.6967099 0.3023102 0.6976373 0 1 9.27631e-4 0 0 0 0 0 0 0 0 0 0 0 0 0.6967099 0.2433039 0.5152923 0.2427473 0.5309159 0.07805454 0 0 0 0 0 0 0 0 0 0 0 0 0.2572768 0.47105 0.01073807 0.4861 4.37122e-4 0.2464659 0.5141164 0.2464658 0.5038154 0.4860998 0.2572768 0.4710499 0.5152923 0.2427473 0.6967099 0.2433039 0.6959711 0.4841203 0.877942 0.4697937 0.8788696 0.7721564 0.6972664 0.7122404 0.01073807 0.4861 0.2572768 0.47105 0.07308548 0.6305378 0.5038154 0.4860998 0.5145535 0.6311584 0.441468 0.6305378 0.5145535 0.4835637 0.6959711 0.4841203 0.650155 0.6344914 0.6972665 0.9535741 0.6967099 0.7721564 0.8471588 0.8170497 0 0.6311584 0.07308548 0.6305378 0.02041542 0.7795963 0.5145535 0.6311584 0.5081154 0.7809296 0.4941381 0.7795962 0.5594462 0.6342132 0.650155 0.6344914 0.6496932 0.7850017 0.5145535 0.8716384 0.4994354 0.8716847 0.4991571 0.7809759 0.8478082 0.8931943 0.8474372 0.7722492 0.8780445 0.8931015 0 0 0 0 0 0 0 0 0 0 0 0 0.7869068 0.4694226 0.7266671 0.3933777 0.9078519 0.4697937 0 0 0 0 0 0 0 0 0 0 0 0 0.2151095 0.07983607 0.1280467 0.08179003 0.1750115 0 0.3674967 0.002666771 0.3865069 0.08179003 0.339542 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.7266671 0.3933777 0.6967099 0.3023102 0.9685572 0.3941199 0.6672186 3.7106e-4 0.6820971 0.07851833 0.5462735 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2151095 0.07983607 0.2444005 0.1715074 0.1280467 0.08179003 0.5141164 0.2464658 0.2701531 0.1715074 0.3865069 0.08179003 0.9990726 0.3032378 0.6967099 0.3023102 1 9.27631e-4 0 0 0 0 0 0 0 0 0 0 0 0 0.6820971 0.07851833 0.6967099 0.2433039 0.5309159 0.07805454 0 0 0 0 0 0 0 0 0 0 0 0 0.2444005 0.1715074 0.2572768 0.47105 4.37122e-4 0.2464659 0.2701531 0.1715074 0.5141164 0.2464658 0.2572768 0.4710499 0.5145535 0.4835637 0.5152923 0.2427473 0.6959711 0.4841203 0.6967099 0.5308228 0.877942 0.4697937 0.6972664 0.7122404 0 0.6311584 0.01073807 0.4861 0.07308548 0.6305378 0.2572768 0.4710499 0.5038154 0.4860998 0.441468 0.6305378 0.5594462 0.6342132 0.5145535 0.4835637 0.650155 0.6344914 0.8474372 0.9077585 0.6972665 0.9535741 0.8471588 0.8170497 0.006438136 0.7809298 0 0.6311584 0.02041542 0.7795963 0.441468 0.6305378 0.5145535 0.6311584 0.4941381 0.7795962 0.5589844 0.7847235 0.5594462 0.6342132 0.6496932 0.7850017 0.5142752 0.7809296 0.5145535 0.8716384 0.4991571 0.7809759</float_array>
+          <technique_common>
+            <accessor source="#Body-mesh-map-0-array" count="228" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Body-mesh-vertices">
+          <input semantic="POSITION" source="#Body-mesh-positions"/>
+        </vertices>
+        <polylist material="Hull-material" count="76">
+          <input semantic="VERTEX" source="#Body-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Body-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Body-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>38 0 0 36 0 1 37 0 2 22 1 3 41 1 4 37 1 5 18 2 6 45 2 7 41 2 8 27 3 9 26 3 10 37 3 11 23 4 12 40 4 13 36 4 14 19 5 15 44 5 16 40 5 17 24 6 18 39 6 19 37 6 20 25 7 21 27 7 22 36 7 23 9 8 24 13 8 25 18 8 26 3 9 27 9 9 28 22 9 29 20 10 30 24 10 31 39 10 32 16 11 33 20 11 34 43 11 35 0 12 36 3 12 37 26 12 38 24 13 39 25 13 40 38 13 41 21 14 42 25 14 43 38 14 44 17 15 45 21 15 46 42 15 47 8 16 48 12 16 49 19 16 50 0 17 51 8 17 52 23 17 53 3 18 54 7 18 55 24 18 56 0 19 57 27 19 58 25 19 59 0 20 60 1 20 61 2 20 62 11 21 63 20 21 64 16 21 65 7 22 66 24 22 67 20 22 68 7 23 69 4 23 70 25 23 71 10 24 72 21 24 73 17 24 74 4 25 75 25 25 76 21 25 77 2 26 78 6 26 79 7 26 80 4 27 81 5 27 82 1 27 83 4 28 84 7 28 85 6 28 86 2 29 87 1 29 88 31 29 89 6 30 90 2 30 91 30 30 92 5 31 93 29 31 94 31 31 95 5 32 96 6 32 97 28 32 98 30 33 99 31 33 100 32 33 101 28 34 102 30 34 103 33 34 104 29 35 105 34 35 106 32 35 107 29 36 108 28 36 109 35 36 110 32 37 111 34 37 112 35 37 113 39 38 114 38 38 115 37 38 116 26 39 117 22 39 118 37 39 119 22 40 120 18 40 121 41 40 122 36 41 123 27 41 124 37 41 125 27 42 126 23 42 127 36 42 128 23 43 129 19 43 130 40 43 131 26 44 132 24 44 133 37 44 134 38 45 135 25 45 136 36 45 137 22 46 138 9 46 139 18 46 140 26 47 141 3 47 142 22 47 143 43 48 144 20 48 145 39 48 146 47 49 147 16 49 148 43 49 149 27 50 150 0 50 151 26 50 152 39 51 153 24 51 154 38 51 155 42 52 156 21 52 157 38 52 158 46 53 159 17 53 160 42 53 161 23 54 162 8 54 163 19 54 164 27 55 165 0 55 166 23 55 167 26 56 168 3 56 169 24 56 170 4 57 171 0 57 172 25 57 173 3 58 174 0 58 175 2 58 176 15 59 177 11 59 178 16 59 179 11 60 180 7 60 181 20 60 182 24 61 183 7 61 184 25 61 185 14 62 186 10 62 187 17 62 188 10 63 189 4 63 190 21 63 191 3 64 192 2 64 193 7 64 194 0 65 195 4 65 196 1 65 197 5 66 198 4 66 199 6 66 200 30 67 201 2 67 202 31 67 203 28 68 204 6 68 205 30 68 206 1 69 207 5 69 208 31 69 209 29 70 210 5 70 211 28 70 212 33 71 213 30 71 214 32 71 215 35 72 216 28 72 217 33 72 218 31 73 219 29 73 220 32 73 221 34 74 222 29 74 223 35 74 224 33 75 225 32 75 226 35 75 227</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Root" name="Root" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <node id="Flame_R" name="Flame_R" type="NODE">
+          <matrix sid="transform">1 0 0 3 0 1 0 0 0 0 1 -1.6 0 0 0 1</matrix>
+        </node>
+        <node id="Wing_R" name="Wing_R" type="NODE">
+          <matrix sid="transform">1.999506 0 0 4 0 1.999506 0 -0.5 0 0 1.999506 -1.6 0 0 0 1</matrix>
+          <instance_geometry url="#Wing_R-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="Hull-material" target="#Hull-material">
+                  <bind_vertex_input semantic="UVTex" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="Wing_L" name="Wing_L" type="NODE">
+          <matrix sid="transform">2 0 0 -4 0 1.999506 0 -0.5 0 0 1.999506 -1.6 0 0 0 1</matrix>
+          <instance_geometry url="#Wing_L-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="Hull-material" target="#Hull-material">
+                  <bind_vertex_input semantic="UVTex" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="TailWing_R" name="TailWing_R" type="NODE">
+          <matrix sid="transform">1.999506 0 0 1.4 0 1.999506 0 -5.5 0 0 1.999506 1.4 0 0 0 1</matrix>
+          <instance_geometry url="#TailWing_R-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="Hull-material" target="#Hull-material">
+                  <bind_vertex_input semantic="UVTex" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="TailWing_L" name="TailWing_L" type="NODE">
+          <matrix sid="transform">2 0 0 -1.4 0 1.999506 0 -5.5 0 0 1.999506 1.4 0 0 0 1</matrix>
+          <instance_geometry url="#TailWing_L-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="Hull-material" target="#Hull-material">
+                  <bind_vertex_input semantic="UVTex" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="Cockpit" name="Cockpit" type="NODE">
+          <matrix sid="transform">1.999506 0 0 0 0 1.999506 0 2.8 0 0 1.999506 0.1 0 0 0 1</matrix>
+          <instance_geometry url="#Cockpit-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="Canopy-material" target="#Canopy-material">
+                  <bind_vertex_input semantic="UVTex" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="Body" name="Body" type="NODE">
+          <matrix sid="transform">1.999506 0 0 0 0 1.999506 0 -0.5 0 0 1.999506 -0.4 0 0 0 1</matrix>
+          <instance_geometry url="#Body-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="Hull-material" target="#Hull-material">
+                  <bind_vertex_input semantic="UVTex" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="Flame_L" name="Flame_L" type="NODE">
+          <matrix sid="transform">1 0 0 -3 0 1 0 0 0 0 1 -1.6 0 0 0 1</matrix>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
