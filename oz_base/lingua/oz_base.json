@@ -1,0 +1,5 @@
+// Windows-to-POSIX language mapping.
+{
+  "English":            "en",
+  "Slovenian":          "sl"
+}

@@ -33,9 +33,9 @@
       "frictSound":     "kaiser_fx/hum6",
       "model":
       {
-        "name":         "biotank",
-        "translation":  [ 0, 1, 0.5 ],
-        "rotation":     [ 0, 0, -90 ]
+        "name":         "console",
+        "translation":  [ 0, 1, -1 ],
+        "rotation":     [ 0, 0, 90 ]
       }
     },
     {
