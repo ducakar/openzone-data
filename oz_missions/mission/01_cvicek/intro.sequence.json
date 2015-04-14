@@ -3,10 +3,12 @@
     "pos":              [ -1000, 608, 57 ],
     "rot":              [ 90, 75, 0 ],
     "track":            "Fanatic - Unreleased Rage",
-    "time":             4
+    "time":             4,
+    "isSkippable":      true
   },
   {
     "time":             8,
+    "isSkippable":      true,
     "title":
 "Beast Lair. You home village.\n\n
 Its inhabitants suffer critical shortage of their favourite drink, cviček."
@@ -14,29 +16,35 @@ Its inhabitants suffer critical shortage of their favourite drink, cviček."
   {
     "rot":              [ -30, 65, 0 ],
     "pos":              [ -1025, 590, 60 ],
-    "time":             2
+    "time":             2,
+    "isSkippable":      true
   },
   {
     "time":             8,
+    "isSkippable":      true,
     "title":
 "But there was a hero who went on a long and dangerous mission to bring cviček to his home village."
   },
   {
     "rot":              [ 180, 75, 0 ],
     "pos":              [ -1025, 590, 200 ],
-    "time":             1
+    "time":             1,
+    "isSkippable":      true
   },
   {
     "pos":              [ 5, -940, 200 ],
-    "time":             3
+    "time":             3,
+    "isSkippable":      true
   },
   {
     "rot":              [ 50, 60, 0 ],
     "pos":              [ 5, -940, 160 ],
-    "time":             1
+    "time":             1,
+    "isSkippable":      true
   },
   {
     "time":             8,
+    "isSkippable":      true,
     "title":
 "The beast hero decided to rob a military base in mountains, where large quantities of confiscated
  cviček are stored ..."
@@ -44,10 +52,12 @@ Its inhabitants suffer critical shortage of their favourite drink, cviček."
   {
     "rot":              [ 145, 60, 0 ],
     "pos":              [ -17.5, -938, 140 ],
-    "time":             1
+    "time":             1,
+    "isSkippable":      true
   },
   {
     "time":             8,
+    "isSkippable":      true,
     "title":
 "... those will be scrapped soon.\n\n
 That would be a shame, no true beast would allow so much precious liquid to be thrown away."
@@ -55,15 +65,18 @@ That would be a shame, no true beast would allow so much precious liquid to be t
   {
     "rot":              [ 0, 75, 0 ],
     "pos":              [ -17.5, -938, 200 ],
-    "time":             1
+    "time":             1,
+    "isSkippable":      true
   },
   {
     "rot":              [ 75, 55, 0 ],
     "pos":              [ 820, 990, 135 ],
-    "time":             3
+    "time":             3,
+    "isSkippable":      true
   },
   {
     "time":             10,
+    "isSkippable":      true,
     "title":
 "But not everything went according to plan.\n\n
 The hero has been captured by a Colonial patrol and is now imprisoned in an outpost, waiting for
@@ -71,6 +84,7 @@ The hero has been captured by a Colonial patrol and is now imprisoned in an outp
   },
   {
     "time":             4,
+    "isSkippable":      true,
     "title":
 "He will need to do some clever tricks to escape and finish his mission ..."
   },
