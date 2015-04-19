@@ -1,0 +1,7 @@
+#: data/oz_test/mission/empty/description.json
+msgid "Empty world intended for creating new mission."
+msgstr ""
+
+#: data/oz_test/mission/empty/description.json
+msgid "Empty"
+msgstr ""

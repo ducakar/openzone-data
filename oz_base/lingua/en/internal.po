@@ -1,0 +1,175 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenZone\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-04-19 17:06+0100\n"
+"Last-Translator: Davorin Učakar <davorin.ucakar@gmail.com>\n"
+"Language-Team: Davorin Učakar <davorin.ucakar@gmail.com>\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.7.5\n"
+
+#: src/client/ui/CreditsMenu.cc:191
+msgid "(See doc/README.html for individual copyrights and licences.)"
+msgstr "(See doc/README.html for individual copyrights and licences.)"
+
+#: src/client/ui/SettingsMenu.cc:155
+msgid "Aim cue"
+msgstr "Aim cue"
+
+#: src/client/ui/SettingsMenu.cc:137
+msgid "Apply"
+msgstr "Apply"
+
+#: src/client/ui/BuildFrame.cc:247
+msgid "B"
+msgstr "B"
+
+#: src/client/ui/CreditsMenu.cc:144 src/client/ui/MissionMenu.cc:189
+#: src/client/ui/SettingsMenu.cc:136
+msgid "Back"
+msgstr "Back"
+
+#: src/client/ui/BuildFrame.cc:147 src/client/ui/BuildFrame.cc:350
+#: src/client/ui/BuildFrame.cc:372
+msgid "Buildings"
+msgstr "Buildings"
+
+#: src/client/ui/MainMenu.cc:129
+msgid "Continue"
+msgstr "Continue"
+
+#: src/client/ui/MainMenu.cc:174
+msgid "Credits"
+msgstr "Credits"
+
+#: src/client/ui/DebugFrame.cc:98 src/client/ui/SettingsMenu.cc:141
+msgid "Debug"
+msgstr "Debug"
+
+#: src/client/ui/SettingsMenu.cc:157
+msgid "Debug window"
+msgstr "Debug window"
+
+#: src/client/ui/MainMenu.cc:176
+msgid "Exit"
+msgstr "Exit"
+
+#: src/client/ui/SettingsMenu.cc:158
+msgid "FPS"
+msgstr "FPS"
+
+#: src/client/ui/SettingsMenu.cc:139
+msgid "Graphics"
+msgstr "Graphics"
+
+#: src/client/ui/BuildFrame.cc:249
+msgid "I"
+msgstr "I"
+
+#: src/client/ui/BuildFrame.cc:163 src/client/ui/BuildFrame.cc:358
+msgid "Items"
+msgstr "Items"
+
+#: src/client/ui/MainMenu.cc:112
+msgid ""
+"Licensed under GNU GPL 3.0. Game data archives and libraries distributed "
+"with OpenZone are work of various authors and use separate licences. For "
+"more details see doc/README.html and files named README.txt and COPYING.txt "
+"inside game data archives."
+msgstr ""
+"Licensed under GNU GPL 3.0. Game data archives and libraries distributed "
+"with OpenZone are work of various authors and use separate licences. For "
+"more details see doc/README.html and files named README.txt and COPYING.txt "
+"inside game data archives."
+
+#: src/client/EditStage.cc:213 src/client/GameStage.cc:293
+msgid "Loading ..."
+msgstr "Loading ..."
+
+#: src/client/ui/BuildFrame.cc:250
+msgid "M"
+msgstr "M"
+
+#: src/client/ui/BuildFrame.cc:171 src/client/ui/BuildFrame.cc:362
+msgid "Miscellaneous"
+msgstr "Miscellaneous"
+
+#: src/client/ui/MainMenu.cc:172
+msgid "Missions"
+msgstr "Missions"
+
+#: src/client/ui/MusicPlayer.cc:162
+msgid "Music Player"
+msgstr "Music Player"
+
+#: src/client/ui/QuestFrame.cc:38 src/client/ui/QuestFrame.cc:132
+msgid "No quest"
+msgstr "No quest"
+
+#: src/client/ui/SettingsMenu.cc:156
+msgid "Object bounds"
+msgstr "Object bounds"
+
+#: src/client/Profile.cc:72
+msgid "Player"
+msgstr "Player"
+
+#: src/client/ui/SettingsMenu.cc:138
+msgid "Profile"
+msgstr "Profile"
+
+#: src/client/ui/MainMenu.cc:134
+msgid "Quickload"
+msgstr "Quickload"
+
+#: src/client/ui/MainMenu.cc:173
+msgid "Settings"
+msgstr "Settings"
+
+#: src/client/EditStage.cc:270 src/client/GameStage.cc:381
+msgid "Shutting down ..."
+msgstr "Shutting down ..."
+
+#: src/client/ui/SettingsMenu.cc:140
+msgid "Sound"
+msgstr "Sound"
+
+#: src/client/ui/CreditsMenu.cc:190
+msgid "The following libraries may be bundled with the engine:"
+msgstr "The following libraries may be bundled with the engine:"
+
+#: src/client/ui/BuildFrame.cc:248
+msgid "U"
+msgstr "U"
+
+#: src/client/ui/BuildFrame.cc:155 src/client/ui/BuildFrame.cc:354
+msgid "Units"
+msgstr "Units"
+
+#: src/client/ui/MainMenu.cc:175
+msgid "Web"
+msgstr "Web"
+
+#: src/client/ui/CreditsMenu.cc:149
+msgid "engine developer"
+msgstr "engine developer"
+
+#: src/client/ui/QuestFrame.cc:60
+msgid "failed"
+msgstr "failed"
+
+#: src/client/ui/QuestFrame.cc:54
+msgid "in progress"
+msgstr "in progress"
+
+#: src/client/ui/CreditsMenu.cc:166
+msgid "package"
+msgstr "package"
+
+#: src/client/ui/QuestFrame.cc:57
+msgid "successful"
+msgstr "successful"

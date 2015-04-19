@@ -1,6 +1,6 @@
 > textures <
 
-Egyptian & Tech1 texture packs
+Egyptian & Tech1
 Sock
 
 > sounds <
@@ -40,5 +40,6 @@ Hunter, Burnt Kona, Fafner, Deranged
 pknight
 James Green, Ryan "MrRogers" Butts, NPherno
 
-> scripts <
-Davorin Učakar
+> music <
+
+Fanatic

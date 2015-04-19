@@ -1,0 +1,3 @@
+#: data/oz_test/class/tester.json
+msgid "tester"
+msgstr ""

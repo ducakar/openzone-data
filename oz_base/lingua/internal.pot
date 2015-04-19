@@ -1,0 +1,158 @@
+
+#: src/client/ui/CreditsMenu.cc:191
+msgid "(See doc/README.html for individual copyrights and licences.)"
+msgstr ""
+
+#: src/client/ui/SettingsMenu.cc:155
+msgid "Aim cue"
+msgstr ""
+
+#: src/client/ui/SettingsMenu.cc:137
+msgid "Apply"
+msgstr ""
+
+#: src/client/ui/BuildFrame.cc:247
+msgid "B"
+msgstr ""
+
+#: src/client/ui/CreditsMenu.cc:144 src/client/ui/MissionMenu.cc:189
+#: src/client/ui/SettingsMenu.cc:136
+msgid "Back"
+msgstr ""
+
+#: src/client/ui/BuildFrame.cc:147 src/client/ui/BuildFrame.cc:350
+#: src/client/ui/BuildFrame.cc:372
+msgid "Buildings"
+msgstr ""
+
+#: src/client/ui/MainMenu.cc:129
+msgid "Continue"
+msgstr ""
+
+#: src/client/ui/MainMenu.cc:174
+msgid "Credits"
+msgstr ""
+
+#: src/client/ui/DebugFrame.cc:98 src/client/ui/SettingsMenu.cc:141
+msgid "Debug"
+msgstr ""
+
+#: src/client/ui/SettingsMenu.cc:157
+msgid "Debug window"
+msgstr ""
+
+#: src/client/ui/MainMenu.cc:176
+msgid "Exit"
+msgstr ""
+
+#: src/client/ui/SettingsMenu.cc:158
+msgid "FPS"
+msgstr ""
+
+#: src/client/ui/SettingsMenu.cc:139
+msgid "Graphics"
+msgstr ""
+
+#: src/client/ui/BuildFrame.cc:249
+msgid "I"
+msgstr ""
+
+#: src/client/ui/BuildFrame.cc:163 src/client/ui/BuildFrame.cc:358
+msgid "Items"
+msgstr ""
+
+#: src/client/ui/MainMenu.cc:112
+msgid ""
+"Licensed under GNU GPL 3.0. Game data archives and libraries distributed "
+"with OpenZone are work of various authors and use separate licences. For "
+"more details see doc/README.html and files named README.txt and COPYING.txt "
+"inside game data archives."
+msgstr ""
+
+#: src/client/EditStage.cc:213 src/client/GameStage.cc:293
+msgid "Loading ..."
+msgstr ""
+
+#: src/client/ui/BuildFrame.cc:250
+msgid "M"
+msgstr ""
+
+#: src/client/ui/BuildFrame.cc:171 src/client/ui/BuildFrame.cc:362
+msgid "Miscellaneous"
+msgstr ""
+
+#: src/client/ui/MainMenu.cc:172
+msgid "Missions"
+msgstr ""
+
+#: src/client/ui/MusicPlayer.cc:162
+msgid "Music Player"
+msgstr ""
+
+#: src/client/ui/QuestFrame.cc:38 src/client/ui/QuestFrame.cc:132
+msgid "No quest"
+msgstr ""
+
+#: src/client/ui/SettingsMenu.cc:156
+msgid "Object bounds"
+msgstr ""
+
+#: src/client/Profile.cc:72
+msgid "Player"
+msgstr ""
+
+#: src/client/ui/SettingsMenu.cc:138
+msgid "Profile"
+msgstr ""
+
+#: src/client/ui/MainMenu.cc:134
+msgid "Quickload"
+msgstr ""
+
+#: src/client/ui/MainMenu.cc:173
+msgid "Settings"
+msgstr ""
+
+#: src/client/EditStage.cc:270 src/client/GameStage.cc:381
+msgid "Shutting down ..."
+msgstr ""
+
+#: src/client/ui/SettingsMenu.cc:140
+msgid "Sound"
+msgstr ""
+
+#: src/client/ui/CreditsMenu.cc:190
+msgid "The following libraries may be bundled with the engine:"
+msgstr ""
+
+#: src/client/ui/BuildFrame.cc:248
+msgid "U"
+msgstr ""
+
+#: src/client/ui/BuildFrame.cc:155 src/client/ui/BuildFrame.cc:354
+msgid "Units"
+msgstr ""
+
+#: src/client/ui/MainMenu.cc:175
+msgid "Web"
+msgstr ""
+
+#: src/client/ui/CreditsMenu.cc:149
+msgid "engine developer"
+msgstr ""
+
+#: src/client/ui/QuestFrame.cc:60
+msgid "failed"
+msgstr ""
+
+#: src/client/ui/QuestFrame.cc:54
+msgid "in progress"
+msgstr ""
+
+#: src/client/ui/CreditsMenu.cc:166
+msgid "package"
+msgstr ""
+
+#: src/client/ui/QuestFrame.cc:57
+msgid "successful"
+msgstr ""
