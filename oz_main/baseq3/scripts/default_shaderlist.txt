@@ -1,5 +1,5 @@
 @special
-openzone
+oz
 egyptsoc
 trak4
 trak5

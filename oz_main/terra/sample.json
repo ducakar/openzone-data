@@ -1,11 +1,11 @@
-// convert terra.png.backup -resize 513x513 -depth 16 terra.png
+// convert original-heightmap.png -resize 513x513 -depth 16 heightmap.png
 {
-  "detailTexture":      "openzone/detail",
-  "liquidTexture":      "openzone/water1",
+  "detailTexture":      "oz/detail",
+  "liquidTexture":      "oz/water1",
   "liquid":             "WATER",
   "map":                "sample-map.png",
 
   "minHeight":          -80.0,
   "maxHeight":          175.0,
-  "heightmap":          "sample-heightmap.png"
+  "heightmap":          "sample-heightmap-513.png"
 }

@@ -1,18 +1,18 @@
-textures/openzone/water1
+textures/oz/water1
 {
   surfaceparm nonsolid
   surfaceparm trans
   surfaceparm water
 }
 
-textures/openzone/floor_lava2
+textures/oz/floor_lava2
 {
   surfaceparm nonsolid
   surfaceparm trans
   surfaceparm lava
 }
 
-textures/openzone/glass
+textures/oz/glass
 {
   surfaceparm trans
 }

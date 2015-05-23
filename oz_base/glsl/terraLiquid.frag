@@ -93,7 +93,7 @@ void main()
 #endif
   colour.rgb         = colour.rgb * (ambient + diffuse + emission) + specular;
   colour.rgb         = mix(colour.rgb, oz_Fog.colour, fog*fog);
-  colour.a           = min(1.0, 1.2 + look.z + dot(specular, vec3(0.5)));
+  colour.a           = min(1.0, 1.33 + look.z + dot(specular, vec3(0.33)));
 
   gl_FragData[0]     = oz_Colour * colour;
 #ifdef OZ_POSTPROCESS

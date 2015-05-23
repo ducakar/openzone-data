@@ -1,6 +1,6 @@
 {
-  "detailTexture":      "openzone/detail",
-  "liquidTexture":      "openzone/water1",
+  "detailTexture":      "oz/detail",
+  "liquidTexture":      "oz/water1",
   "liquidFogColour":    [ 0.00, 0.05, 0.20, 1.00 ],
   "liquid":             "WATER",
 
