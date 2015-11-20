@@ -13,21 +13,26 @@
   [
     {
       "title":          "crusher",
-      "type":           "CRUSHING_BLOCK",
+      "type":           "MOVER",
+      "flag.pusher":    true,
+      "flag.crusher":   true,
       "target":         0,
       "move":           [ 0, -7.68, 0 ],
       "slideTime":      2.0,
-      "timeout":        3.0,
+      "openTimeout":    3.0,
+      "closeTimeout":   3.0,
       "openSound":      "free/rumble",
       "closeSound":     "free/rumble",
       "frictSound":     "kaiser_fx/hum6"
     },
     {
       "title":          "ignorant",
-      "type":           "IGNORING_BLOCK",
+      "type":           "MOVER",
+      "flag.ignorant":  true,
       "move":           [ 0, -7.68, 0 ],
       "slideTime":      2.0,
-      "timeout":        4.0,
+      "openTimeout":    4.0,
+      "closeTimeout":   4.0,
       "openSound":      "free/rumble",
       "closeSound":     "free/rumble",
       "frictSound":     "kaiser_fx/hum6",
@@ -40,34 +45,32 @@
     },
     {
       "title":          "auto door",
-      "type":           "AUTO_DOOR",
+      "type":           "DOOR",
+      "flag.autoOpen":  true,
       "target":         2,
       "move":           [ -2.55, 0, 0 ],
       "slideTime":      2.0,
-      "timeout":        2.0,
+      "closeTimeout":   2.0,
       "openSound":      "free/itemback",
-      "closeSound":     "free/itemback",
-      "frictSound":     ""
+      "closeSound":     "free/itemback"
     },
     {
       "title":          "manual door",
-      "type":           "MANUAL_DOOR",
+      "type":           "DOOR",
       "target":         3,
       "key":            1,
       "move":           [ -5, 0, 0 ],
       "slideTime":      2.0,
       "openSound":      "free/itemback",
-      "closeSound":     "free/itemback",
-      "frictSound":     ""
+      "closeSound":     "free/itemback"
     },
     {
       "title":          "elevator",
-      "type":           "ELEVATOR",
+      "type":           "MOVER",
+      "flag.pusher":    true,
       "target":         4,
-      "move":           [ 0, 0, 3 ],
+      "move":           [ 0, 3, 3 ],
       "slideTime":      2.5,
-      "openSound":      "",
-      "closeSound":     "",
       "frictSound":     "kaiser_fx/hum6"
     },
     {
@@ -75,6 +78,18 @@
       "type":           "STATIC",
       "target":         3,
       "openSound":      "openarena/clack"
+    },
+    {
+      "title":          "teleport 1",
+      "type":           "PORTAL",
+      "target":         6,
+      "move":           [ 2, 0, 0.01 ]
+    },
+    {
+      "title":          "teleport 2",
+      "type":           "PORTAL",
+      "target":         7,
+      "move":           [ -2, 0, 0.01 ]
     }
   ]
 }

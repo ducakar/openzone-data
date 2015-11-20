@@ -152,7 +152,7 @@ function initStressTest()
   -- Map area in km^2
   local area = (ozOrbisGetSize() / 1000) ^ 2
 
-  for i = 1, area * 30 do
+  for i = 1, area * 50 do
     local x = -OZ_ORBIS_DIM + 2 * OZ_ORBIS_DIM * math.random()
     local y = -OZ_ORBIS_DIM + 2 * OZ_ORBIS_DIM * math.random()
     local z = ozTerraHeight(x, y)
@@ -162,7 +162,7 @@ function initStressTest()
     end
   end
 
-  for i = 1, area * 30 do
+  for i = 1, area * 50 do
     local x = -OZ_ORBIS_DIM + 2 * OZ_ORBIS_DIM * math.random()
     local y = -OZ_ORBIS_DIM + 2 * OZ_ORBIS_DIM * math.random()
     local z = ozTerraHeight(x, y)
@@ -172,7 +172,7 @@ function initStressTest()
     end
   end
 
-  for i = 1, area * 30 do
+  for i = 1, area * 50 do
     local x = -OZ_ORBIS_DIM + 2 * OZ_ORBIS_DIM * math.random()
     local y = -OZ_ORBIS_DIM + 2 * OZ_ORBIS_DIM * math.random()
     local z = ozTerraHeight(x, y)
@@ -182,7 +182,7 @@ function initStressTest()
     end
   end
 
-  for i = 1, area * 600 do
+  for i = 1, area * 500 do
     local x = -OZ_ORBIS_DIM + 2 * OZ_ORBIS_DIM * math.random()
     local y = -OZ_ORBIS_DIM + 2 * OZ_ORBIS_DIM * math.random()
     local z = ozTerraHeight(x, y)
@@ -192,7 +192,7 @@ function initStressTest()
     end
   end
 
-  for i = 1, area * 600 do
+  for i = 1, area * 500 do
     local x = -OZ_ORBIS_DIM + 2 * OZ_ORBIS_DIM * math.random()
     local y = -OZ_ORBIS_DIM + 2 * OZ_ORBIS_DIM * math.random()
     local z = ozTerraHeight(x, y)

@@ -18,19 +18,12 @@
  */
 
 /*
- * mesh.frag
+ * bsp.frag
  *
- * Generic shader for meshes.
+ * BSP shader.
  */
 
 precision highp float;
-
-struct CaelumLight
-{
-  vec3 dir;
-  vec3 colour;
-  vec3 ambient;
-};
 
 //struct Light
 //{
@@ -48,10 +41,10 @@ uniform mat4        oz_Colour;
 uniform sampler2D   oz_Texture;
 uniform sampler2D   oz_Masks;
 uniform sampler2D   oz_Normals;
+uniform sampler2D   oz_Lightmap;
 uniform samplerCube oz_EnvMap;
 uniform float       oz_Shininess;
 //uniform int         oz_NumLights;
-uniform CaelumLight oz_CaelumLight;
 //uniform Light       oz_Lights[8];
 uniform Fog         oz_Fog;
 
@@ -79,14 +72,15 @@ void main()
 
   vec4  colour       = texture2D(oz_Texture, exTexCoord);
   vec4  masks        = texture2D(oz_Masks, exTexCoord);
+  vec4  lightmap     = texture2D(oz_Lightmap, exTexCoord);
 
   // Caelum light.
-  float diffuseDot   = max(0.0, dot(oz_CaelumLight.dir, normal));
-  float specularDot  = max(0.0, dot(oz_CaelumLight.dir, reflectDir));
-  vec3  ambient      = oz_CaelumLight.ambient;
-  vec3  diffuse      = oz_CaelumLight.colour * diffuseDot;
+  float diffuseDot   = 0.0;
+  float specularDot  = 0.0;
+  vec3  ambient      = lightmap.rgb;
+  vec3  diffuse      = vec3(0.0);
   vec3  emission     = masks.ggg;
-  vec3  specular     = oz_CaelumLight.colour * (masks.r * pow(specularDot, oz_Shininess));
+  vec3  specular     = vec3(0.0);
 
   // Point lights.
 //  for(int i = 0; i < oz_NumLights; ++i) {
