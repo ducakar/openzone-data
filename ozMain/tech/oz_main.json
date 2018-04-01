@@ -20,15 +20,15 @@
 
   {
     "building":         "beastBunker",
-    "requires":         [ "beastTech" ]
+    "dependencies":     [ "beastTech" ]
   },
   {
     "building":         "bunker",
-    "requires":         [ "droidTech" ]
+    "dependencies":     [ "droidTech" ]
   },
   {
     "building":         "tower",
-    "requires":         [ "droidTech" ]
+    "dependencies":     [ "droidTech" ]
   },
   {
     "building":         "house"
@@ -39,31 +39,31 @@
 
   {
     "unit":             "beast",
-    "requires":         [ "beastTech" ]
+    "dependencies":     [ "beastTech" ]
   },
   {
     "unit":             "cyborg",
-    "requires":         [ "cyborgTech" ]
+    "dependencies":     [ "cyborgTech" ]
   },
   {
     "unit":             "droid",
-    "requires":         [ "droidTech" ]
+    "dependencies":     [ "droidTech" ]
   },
   {
     "unit":             "droid.OOM-9",
-    "requires":         [ "droidTech" ]
+    "dependencies":     [ "droidTech" ]
   },
   {
     "unit":             "hoverTank",
-    "requires":         [ "droidTech" ]
+    "dependencies":     [ "droidTech" ]
   },
   {
     "unit":             "raptor",
-    "requires":         [ "droidTech" ]
+    "dependencies":     [ "droidTech" ]
   },
   {
     "unit":             "mechWarrior",
-    "requires":         [ "droidTech" ]
+    "dependencies":     [ "droidTech" ]
   },
   {
     "unit":             "knight"
@@ -92,27 +92,27 @@
   },
   {
     "item":             "beast$plasmagun",
-    "requires":         [ "beastTech" ]
+    "dependencies":     [ "beastTech" ]
   },
   {
     "item":             "cyborg$chaingun",
-    "requires":         [ "cyborgTech" ]
+    "dependencies":     [ "cyborgTech" ]
   },
   {
     "item":             "droid$blaster",
-    "requires":         [ "droidTech" ]
+    "dependencies":     [ "droidTech" ]
   },
   {
     "item":             "droid$hyperblaster",
-    "requires":         [ "droidTech" ]
+    "dependencies":     [ "droidTech" ]
   },
   {
     "item":             "droid$chaingun",
-    "requires":         [ "droidTech" ]
+    "dependencies":     [ "droidTech" ]
   },
   {
     "item":             "droid$grenadeLauncher",
-    "requires":         [ "droidTech" ]
+    "dependencies":     [ "droidTech" ]
   },
   {
     "item":             "knight$mace"
@@ -126,15 +126,15 @@
 
   {
     "object":           "serviceStation",
-    "requires":         [ "droidTech" ]
+    "dependencies":     [ "droidTech" ]
   },
   {
     "object":           "console",
-    "requires":         [ "droidTech" ]
+    "dependencies":     [ "droidTech" ]
   },
   {
     "object":           "metalCrate",
-    "requires":         [ "droidTech" ]
+    "dependencies":     [ "droidTech" ]
   },
   {
     "object":           "smallCrate"
