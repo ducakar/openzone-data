@@ -99,7 +99,7 @@ void main()
 //  }
 
 #ifdef OZ_ENV_MAP
-  if(masks.b != 0.0) {
+  if (masks.b != 0.0) {
     specular        += textureCube(oz_EnvMap, reflectDir).rgb * ambient * masks.b;
   }
 #endif

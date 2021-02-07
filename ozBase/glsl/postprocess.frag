@@ -42,7 +42,7 @@ void main()
 {
   float multiSample = 0.0;
 
-  for(float x = -MS_DIM; x <= MS_DIM; x += 1.0) {
+  for (float x = -MS_DIM; x <= MS_DIM; x += 1.0) {
     vec2  coords    = vec2(exTexCoord.s + MS_SPACING * x, exTexCoord.t);
     vec4  specular  = texture2D(oz_Masks, coords);
     float luminance = specular.r + specular.g + specular.b;

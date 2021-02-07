@@ -42,16 +42,16 @@ Vec3 = {
   end,
 
   normalize = function(x, y, z)
-    local len = vec.length(x, y, z)
+    local len = Vec3.length(x, y, z)
     return x / len, y / len, z / len
   end,
 
   distance = function(ax, ay, az, bx, by, bz)
-    return length(ax - bx, ay - by, az - bz)
+    return Vec3.length(ax - bx, ay - by, az - bz)
   end,
 
   reflect = function(ix, iy, iz, nx, ny, nz)
-    local d = dot(ix, iy, iz, nx, ny, nz)
+    local d = Vec3.dot(ix, iy, iz, nx, ny, nz)
     return ix - d*nx, iy - d*ny, iz - d*nz
   end,
 

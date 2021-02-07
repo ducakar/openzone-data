@@ -83,7 +83,7 @@ void main()
   vec3  specular     = vec3(0.0);
 
   // Point lights.
-//  for(int i = 0; i < oz_NumLights; ++i) {
+//  for (int i = 0; i < oz_NumLights; ++i) {
 //    vec3 lightDir = oz_Lights[i].pos - exPosition;
 
 //    diffuseDot       = max(0.0, dot(lightDir, normal));
