@@ -1,5 +1,5 @@
 {
-  "velocitySpread":     8.0,
+  "velocitySpread":     4.0,
 
   "life":               8.0,
   "lifeSpread":         1.0,
